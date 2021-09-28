@@ -21,10 +21,15 @@ Slave(s) µc: [ATMEGA32]
 The slave(s) microcontrollers are responsible for taking the commands from the master (through the SPI protocol). Commands that can be performed by slave(s) include, printing data on an LCD dispaly [string, char, int in different spaces on the LCD display], controlling a 2-digits Seven Segment dispaly, conttolling lights and motors through the PMW timer mode.... 
 
 
+************ Important Note ************
 
+the code contains both the slave and master µc codes, thus, 
+1- the DIO_Config.c file needs to be manually changed to adjust the pin direction for the SPI pins to choose the slave or master codes 
+2- same needs to be done in the main
 
+************ A Video showing the prototype ************
 
-
+Google Drive :  https://drive.google.com/drive/folders/1iHzdWWelUCMZuMYpL3mNmT8Hl8zCGnj6?usp=sharing
 
 
 
